@@ -1,5 +1,5 @@
 {
-  "name": "node-gimei",
+  "name": "@longgt-public/node-gimei",
   "version": "0.0.6",
   "description": "random Japanese name and address generator. nodejs port of gimei",
   "main": "index.js",
