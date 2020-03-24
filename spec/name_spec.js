@@ -78,5 +78,13 @@ describe("A suite is name case.", function() {
         expect(fullNameKatakana === lastNameKatakana + " " + firstNameKatakana).toBeTruthy();
     });
 
+    it ("reset.", function() {
+        var name = gimei.name();
+        var fullNameKanjiBefore = name.kanji();
+        gimei.reset();
+        name = gimei.name();
+        var fullNameKanjiAfter = name.kanji();
+        expect(fullNameKanjiBefore === fullNameKanjiAfter).toBeFalse();
+    });
 });
 

@@ -96,5 +96,13 @@ describe("A suite is address case.", function() {
         expect(fullAddressKatakana === prefectureAddressKatakana + " " + cityAddressKatakana + " " + townAddressKatakana).toBeTruthy();
     });
 
+    it ("reset.", function() {
+        var address = gimei.address();
+        var fullAddressKanjiBefore = address.kanji();
+        gimei.reset();
+        address = gimei.address();
+        var fullAddressKanjiAfter = address.kanji();
+        expect(fullAddressKanjiBefore === fullAddressKanjiAfter).toBeFalse();
+    });
 });
 

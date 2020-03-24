@@ -1,6 +1,6 @@
 {
   "name": "@longgt-public/node-gimei",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "random Japanese name and address generator. nodejs port of gimei",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,11 @@
     "generator"
   ],
   "author": "demiglacesource",
+  "contributors": [
+    {
+      "name": "longgt"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/longgt/node-gimei/issues"

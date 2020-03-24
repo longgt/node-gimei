@@ -7,7 +7,7 @@ node-gimei
 Install
 ---------
 
-    $ npm install node-gimei
+    $ npm install @longgt-public/node-gimei
 
 Usage
 --------------
@@ -16,7 +16,7 @@ Usage
 
 架空の人物名を返します。
 
-    var gimei = require('node-gimei');
+    var gimei = require('@longgt-public/node-gimei')();
     var name = gimei.name();
     console.log(name.kanji());             // "斎藤 陽菜"
     console.log(name.hiragana());          // "さいとう はるな"
@@ -32,7 +32,7 @@ Usage
 
 架空の男性名を返します。
 
-    var gimei = require('node-gimei');
+    var gimei = require('@longgt-public/node-gimei')();
     var male = gimei.male();
     console.log(male.kanji());             // "小林 顕士"
     console.log(male.isMale());            // true
@@ -42,7 +42,7 @@ Usage
 
 架空の女性名を返します。
 
-    var gimei = require('node-gimei');
+    var gimei = require('@longgt-public/node-gimei')();
     var female = gimei.female(); 
     console.log(female.kanji());           // "根本 彩世"
     console.log(female.isMale());          // false
@@ -52,7 +52,7 @@ Usage
 
 架空の住所を返します。
 
-    var gimei = require('node-gimei');
+    var gimei = require('@longgt-public/node-gimei')();
     var address = gimei.address();
     console.log(address.kanji());                  // 岡山県 大島郡大和村 稲木町
     console.log(address.hiragana());               // おかやまけん おおしまぐんやまとそん いなぎちょう
