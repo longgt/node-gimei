@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/longgt/node-gimei#readme",
   "dependencies": {
-    "js-yaml": "^3.13.1"
+    "js-yaml": "^4.1.0"
   },
   "devDependencies": {
     "jasmine": "^3.5.0"
