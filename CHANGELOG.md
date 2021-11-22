@@ -1,3 +1,9 @@
+#### 0.2.0 (2021-11-22)
+
+##### Changes
+
+* **deps:**  bump js-yaml to 4.1.0 ([883d944e](https://github.com/longgt/node-gimei/commit/883d944e4f2399264bbabee51e52efd66e123c0f))
+
 #### 0.1.0 (2020-03-25)
 
 ##### Chores
