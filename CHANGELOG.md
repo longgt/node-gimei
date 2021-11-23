@@ -1,3 +1,9 @@
+#### 0.2.1 (2021-11-23)
+
+##### Changes
+
+* **perf:** cache initial data for all instances([059176c7](https://github.com/longgt/node-gimei/commit/059176c7de4cef8dd6f3202fcc14f019bec5a6a0))
+
 #### 0.2.0 (2021-11-22)
 
 ##### Changes
