@@ -66,6 +66,17 @@ Usage
     console.log(address.town().kanji());           // 稲木町
     console.log(address.town().hiragana());        // いなぎちょう
     console.log(address.town().katakana());        // イナギチョウ
+    
+### reset()
+
+既存のデータをリセットします。
+
+    var gimei = require('@longgt-public/node-gimei')();
+    var name = gimei.name();
+    console.log(name.kanji());             // "斎藤 陽菜"
+    gimei.reset();
+    name = gimei.name();
+    console.log(name.kanji());             // "高橋 由佳"
 
 Link
 ------
