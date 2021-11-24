@@ -3,6 +3,7 @@ describe("A suite is address case.", function() {
     var fullAddressKanji = address.kanji();
     var fullAddressHiragana = address.hiragana();
     var fullAddressKatakana = address.katakana();
+    var fullAddressKatakanaHan = address.katakanaHan();
     var prefectureAddressKanji = address.prefecture().kanji();
     var prefectureAddressHiragana = address.prefecture().hiragana();
     var prefectureAddressKatakana = address.prefecture().katakana();
@@ -17,6 +18,7 @@ describe("A suite is address case.", function() {
       fullAddressKanji
       , fullAddressHiragana
       , fullAddressKatakana
+      , fullAddressKatakanaHan
       , prefectureAddressKanji
       , prefectureAddressHiragana
       , prefectureAddressKatakana
@@ -46,6 +48,10 @@ describe("A suite is address case.", function() {
 
     it ("type of fullAddressKatakana.", function() {
         expect(fullAddressKatakana).toMatch(/^[ァ-ン ]+$/);
+    });
+
+    it ("type of fullAddressKatakanaHan.", function() {
+        expect(fullAddressKatakanaHan).toMatch(/^[ｧ-ﾝﾞ ]+$/);
     });
 
     it ("type of prefectureAddressKanji.", function() {

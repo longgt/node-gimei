@@ -1,3 +1,10 @@
+#### 0.3.0 (2021-11-24)
+
+##### Changes
+
+* **name:** add katakanaHan
+* **address:** add katakanaHan
+
 #### 0.2.1 (2021-11-23)
 
 ##### Changes
