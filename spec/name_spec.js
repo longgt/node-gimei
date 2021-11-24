@@ -3,6 +3,7 @@ describe("A suite is name case.", function() {
     var fullNameKanji = name.kanji();
     var fullNameHiragana = name.hiragana();
     var fullNameKatakana = name.katakana();
+    var fullNameKatakanaHan = name.katakanaHan();
     var lastNameKanji = name.last().kanji();
     var lastNameHiragana = name.last().hiragana();
     var lastNameKatakana = name.last().katakana();
@@ -14,6 +15,7 @@ describe("A suite is name case.", function() {
       fullNameKanji
       , fullNameHiragana
       , fullNameKatakana
+      , fullNameKatakanaHan
       , lastNameKanji
       , lastNameHiragana
       , lastNameKatakana
@@ -40,6 +42,10 @@ describe("A suite is name case.", function() {
 
     it ("type of fullNameKatakana.", function() {
         expect(fullNameKatakana).toMatch(/^[ァ-ン ]+$/);
+    });
+
+    it ("type of fullNameKatakanaHan.", function() {
+        expect(fullNameKatakanaHan).toMatch(/^[ｧ-ﾝﾞ ]+$/);
     });
 
     it ("type of lastNameKanji.", function() {
