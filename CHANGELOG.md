@@ -1,3 +1,10 @@
+#### 0.4.0 (2024-11-20)
+
+##### Changes
+
+* **name:** add Romaji
+* **address:** add Romaji
+
 #### 0.3.0 (2021-11-24)
 
 ##### Changes

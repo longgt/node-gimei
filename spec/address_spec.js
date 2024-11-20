@@ -13,21 +13,29 @@ describe("A suite is address case.", function() {
     var townAddressKanji = address.town().kanji();
     var townAddressHiragana = address.town().hiragana();
     var townAddressKatakana = address.town().katakana();
+    var fullAddressRomaji = address.romaji();
+    var prefectureAddressRomaji = address.prefecture().romaji();
+    var cityAddressRomaji = address.city().romaji();
+    var townAddressRomaji = address.town().romaji();
 
     var all = [
-      fullAddressKanji
-      , fullAddressHiragana
-      , fullAddressKatakana
-      , fullAddressKatakanaHan
-      , prefectureAddressKanji
-      , prefectureAddressHiragana
-      , prefectureAddressKatakana
-      , cityAddressKanji
-      , cityAddressHiragana
-      , cityAddressKatakana
-      , townAddressKanji
-      , townAddressHiragana
-      , townAddressKatakana
+      fullAddressKanji,
+      fullAddressHiragana,
+      fullAddressKatakana,
+      fullAddressKatakanaHan,
+      prefectureAddressKanji,
+      prefectureAddressHiragana,
+      prefectureAddressKatakana,
+      cityAddressKanji,
+      cityAddressHiragana,
+      cityAddressKatakana,
+      townAddressKanji,
+      townAddressHiragana,
+      townAddressKatakana,
+      fullAddressRomaji,
+      prefectureAddressRomaji,
+      cityAddressRomaji,
+      townAddressRomaji,
     ];
 
     all.forEach(function(i) {
@@ -100,6 +108,22 @@ describe("A suite is address case.", function() {
 
     it ("fullAddressKatakana === prefectureAddressKatakana + ' ' + cityAddressKatakana + ' ' + townAddressKatakana.", function() {
         expect(fullAddressKatakana === prefectureAddressKatakana + " " + cityAddressKatakana + " " + townAddressKatakana).toBeTruthy();
+    });
+
+    it ("type of fullAddressRomaji.", function() {
+        expect(fullAddressRomaji).toMatch(/^[a-zA-Z ]+$/);
+    });
+
+    it ("type of prefectureAddressRomaji.", function() {
+        expect(prefectureAddressRomaji).toMatch(/^[a-zA-Z ]+$/);
+    });
+
+    it ("type of cityAddressRomaji.", function() {
+        expect(cityAddressRomaji).toMatch(/^[a-zA-Z ]+$/);
+    });
+
+    it ("type of townAddressRomaji.", function() {
+        expect(townAddressRomaji).toMatch(/^[a-zA-Z ]+$/);
     });
 
     it ("reset.", function() {

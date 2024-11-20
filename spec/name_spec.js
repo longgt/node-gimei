@@ -10,18 +10,24 @@ describe("A suite is name case.", function() {
     var firstNameKanji = name.first().kanji();
     var firstNameHiragana = name.first().hiragana();
     var firstNameKatakana = name.first().katakana();
+    var fullNameRomaji = name.romaji();
+    var firstNameRomaji = name.first().romaji();
+    var lastNameRomaji = name.last().romaji();
 
     var all = [
-      fullNameKanji
-      , fullNameHiragana
-      , fullNameKatakana
-      , fullNameKatakanaHan
-      , lastNameKanji
-      , lastNameHiragana
-      , lastNameKatakana
-      , firstNameKanji
-      , firstNameHiragana
-      , firstNameKatakana
+      fullNameKanji,
+      fullNameHiragana,
+      fullNameKatakana,
+      fullNameKatakanaHan,
+      lastNameKanji,
+      lastNameHiragana,
+      lastNameKatakana,
+      firstNameKanji,
+      firstNameHiragana,
+      firstNameKatakana,
+      fullNameRomaji,
+      firstNameRomaji,
+      lastNameRomaji,
     ];
 
     all.forEach(function(i) {
@@ -82,6 +88,18 @@ describe("A suite is name case.", function() {
 
     it ("fullNameKatakana === lastNameKatakana + ' ' + firstNameKatakana.", function() {
         expect(fullNameKatakana === lastNameKatakana + " " + firstNameKatakana).toBeTruthy();
+    });
+
+    it ("type of fullNameRomaji.", function() {
+        expect(fullNameRomaji).toMatch(/^[a-zA-Z ]+$/);
+    });
+
+    it("type of firstNameRomaji.", function () {
+      expect(firstNameRomaji).toMatch(/^[a-zA-Z]+$/);
+    });
+
+    it("type of lastNameRomaji.", function () {
+      expect(lastNameRomaji).toMatch(/^[a-zA-Z]+$/);
     });
 
     it ("reset.", function() {
