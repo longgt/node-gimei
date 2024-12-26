@@ -1,3 +1,13 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+#### 0.4.1 (2024-12-26)
+
+##### Bug Fixes
+
+* **address:** index out of range in some cases ([2cf74bf](https://github.com/longgt/node-gimei/commit/2cf74bf73f76eaefcac1abd9e8463b33159d2fb6))
+
 #### 0.4.0 (2024-11-20)
 
 ##### Changes
@@ -40,4 +50,3 @@
 ##### Bug Fixes
 
 * **name:**  index out of range in some case ([f4b231c9](https://github.com/longgt/node-gimei/commit/f4b231c92f4f6c99ae50a78834dc8956914bc58e))
-
