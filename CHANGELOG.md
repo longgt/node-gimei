@@ -4,7 +4,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 #### 0.4.1 (2024-12-26)
 
-
 ##### Bug Fixes
 
 * **address:** index out of range in some cases ([2cf74bf](https://github.com/longgt/node-gimei/commit/2cf74bf73f76eaefcac1abd9e8463b33159d2fb6))
